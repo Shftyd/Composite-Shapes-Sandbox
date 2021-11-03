@@ -6,14 +6,14 @@ float circleX, circleY, circleDiameter;
 fullScreen();
 //
 //Population
-//rectX = 1/2*displayWidth;
-//rectY = 1/2*displayHeight;
-//rectWidth = 1/2*displayWidth;
-//rectHeight = 1/2*displayHeight;
+rectX = displayWidth*1/2 - displayHeight*1/2;
+rectY = displayHeight * 0;
+rectWidth = displayWidth;
+rectHeight = displayHeight;
 circleX = displayWidth*1/2;
 circleY = displayHeight*1/2;
-circleDiameter = displayHeight; //smallest
+circleDiameter = displayHeight; //smallest dimension
 //
 //Canvas
-//rect(rectX, rectY, rectWidth, rectHeight);
+rect(rectX, rectY, rectWidth, rectHeight);
 ellipse(circleX, circleY, circleDiameter, circleDiameter);
