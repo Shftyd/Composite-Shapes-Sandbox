@@ -17,3 +17,6 @@ circleDiameter = displayHeight; //smallest dimension
 //Canvas
 rect(rectX, rectY, rectWidth, rectHeight);
 ellipse(circleX, circleY, circleDiameter, circleDiameter);
+ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
+ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
+triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
