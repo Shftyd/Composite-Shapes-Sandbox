@@ -7,11 +7,14 @@ float noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
 float mouthX1, mouthY1, mouthX2, mouthY2;
 float mouthThick, reset;
 float measleX, measleY, measleDiameter;
-color measleColor=#4F7CB2, resetColor=#FFFFFF;
+color measleColor=#FF0000, resetColor=#FFFFFF;
 //
+void setup() {
 //Geometry
 fullScreen();
 //
+}//End setup
+
 //Population
 rectX = displayWidth*1/2 - displayHeight*1/2;
 rectY = displayHeight * 0;
@@ -39,10 +42,10 @@ mouthThick = 15;
 measleX = random(displayWidth);
 measleY = random(displayHeight);
 measleDiameter = random(displayWidth*1/30, displayWidth*1/10);
-reset = 1;s
+reset = 1;
 //
 //Canvas
-rect(rectX, rectY, rectWidth, rectHeight);
+//rect(rectX, rectY, rectWidth, rectHeight);
 ellipse(faceX, faceY, faceDiameter, faceDiameter);
 ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
 ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
