@@ -42,11 +42,11 @@ void setup() {
 void draw() {
   measleX = random(displayWidth);
 measleY = random(displayHeight);
-measleDiameter = random(displayWidth*1/30, displayWidth*1/10);
+measleDiameter = random(displayWidth*1/1000000000, displayWidth*1/10);
 //
 //Canvas
-//rect(rectX, rectY, rectWidth, rectHeight);
-//ellipse(faceX, faceY, faceDiameter, faceDiameter);
+rect(rectX, rectY, rectWidth, rectHeight);
+ellipse(faceX, faceY, faceDiameter, faceDiameter);
 ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
 ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
 triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
